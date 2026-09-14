@@ -1,0 +1,17 @@
+{
+  "description": "Flutter app for on-device two-stage speech screening of dysarthria and stuttering using ONNX, audio preprocessing, SQLite history, and Arabic/English UI.",
+  "topics": [
+    "flutter",
+    "dart",
+    "onnx",
+    "on-device-ai",
+    "speech-processing",
+    "audio",
+    "healthcare",
+    "machine-learning",
+    "mobile-app",
+    "sqflite",
+    "arabic",
+    "rtl"
+  ]
+}

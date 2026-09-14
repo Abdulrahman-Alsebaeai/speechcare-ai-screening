@@ -1,0 +1,41 @@
+{
+  "project": "AI-Based Mobile Application for Early Detection of Dysarthria and Stuttering",
+  "architecture": "Two-stage Wav2Vec2 + BiLSTM + Attention",
+  "model1": {
+    "task": "Normal Speech vs Speech Disorder",
+    "classes": [
+      "Normal Speech",
+      "Speech Disorder"
+    ],
+    "artifacts": {
+      "pt": "/kaggle/working/final_speech_disorder_models_FIXED/model1_normal_vs_disorder_best.pt",
+      "pkl": "/kaggle/working/final_speech_disorder_models_FIXED/model1_normal_vs_disorder_best.pkl",
+      "onnx": "/kaggle/working/final_speech_disorder_models_FIXED/model1_normal_vs_disorder_best.onnx",
+      "onnx_ok": true,
+      "onnx_error_file": null
+    }
+  },
+  "model2": {
+    "task": "Dysarthria vs Stuttering",
+    "classes": [
+      "Dysarthria",
+      "Stuttering"
+    ],
+    "artifacts": {
+      "pt": "/kaggle/working/final_speech_disorder_models_FIXED/model2_dysarthria_vs_stuttering_best.pt",
+      "pkl": "/kaggle/working/final_speech_disorder_models_FIXED/model2_dysarthria_vs_stuttering_best.pkl",
+      "onnx": "/kaggle/working/final_speech_disorder_models_FIXED/model2_dysarthria_vs_stuttering_best.onnx",
+      "onnx_ok": true,
+      "onnx_error_file": null
+    }
+  },
+  "audio_config": {
+    "sample_rate": 16000,
+    "max_duration": 4.0,
+    "target_num_samples": 64000,
+    "normal_threshold": 0.5,
+    "low_confidence_threshold": 0.6
+  },
+  "medical_note": "This system is for early screening only and is not a clinical diagnosis.",
+  "export_note": "PT and PKL are required for FastAPI deployment. ONNX is included only if export succeeds."
+}
